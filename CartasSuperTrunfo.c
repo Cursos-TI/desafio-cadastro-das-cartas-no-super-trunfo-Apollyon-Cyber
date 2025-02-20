@@ -6,7 +6,15 @@ int main() {
     double Area;
     double Pib;
     char codigo [10];
+    char nomeCidade[50];
+    char estado[50];
 
+    printf("Insira o nome da cidade:\n");
+    scanf("%s", nomeCidade);
+
+    printf("Insira o estado da cidade:\n");
+    scanf("%s", estado);
+    
     printf("Insira o codigo da cidade:\n");
     scanf("%s", codigo);
 
@@ -22,6 +30,8 @@ int main() {
     printf("Digite o PIB da cidade:\n");
     scanf("%lf", &Pib);
 
+    printf("O nome da cidade é: %s \n", nomeCidade);
+    printf("O estado da cidade é: %s \n", estado);
     printf("O codigo da cidade é: %s \n", codigo);
     printf("A quantidade da Popuação é: %d \n", populacao);
     printf("O numero de pontos turistico da cidade é: %d \n", PontoTuristico);
