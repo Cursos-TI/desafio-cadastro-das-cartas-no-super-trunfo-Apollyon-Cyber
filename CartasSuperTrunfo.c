@@ -8,6 +8,9 @@ int main() {
     char codigo [10];
     char nomeCidade[50];
     char estado[50];
+    float DensidadePopulacional;
+    float PibPerCapta;
+
 
     printf("Insira o nome da cidade:\n");
     scanf("%s", nomeCidade);
@@ -30,6 +33,15 @@ int main() {
     printf("Digite o PIB da cidade:\n");
     scanf("%lf", &Pib);
 
+    // Cálculos
+
+    DensidadePopulacional = (float) populacao/Area;
+    PibPerCapta = (float) Pib/populacao;
+    
+    // Exibindo resultados
+    printf("A Densidade Populacional é: %.4f habitantes por km²\n", DensidadePopulacional);
+    printf("O valor do PIB Per Capita é: %.4f riqueza média por pessoa na cidade\n", PibPerCapta);
+
     printf("O nome da cidade é: %s \n", nomeCidade);
     printf("O estado da cidade é: %s \n", estado);
     printf("O codigo da cidade é: %s \n", codigo);
@@ -39,4 +51,22 @@ int main() {
     printf("O PIB é: %lf \n", Pib);
 
     return 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
